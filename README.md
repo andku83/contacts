@@ -17,11 +17,16 @@ git clone https://github.com/andku83/contacts.git
 composer install
 ~~~
 
+~~~
+yii migrate
+yii serve
+~~~
+
 Now you should be able to access the application through the following URL, assuming `contacts` is the directory
 directly under the Web root.
 
 ~~~
-http://localhost/contacts/web/
+http://localhost:8080/
 ~~~
 
 
@@ -45,4 +50,3 @@ return [
 **NOTES:**
 - Yii won't create the database for you, this has to be done manually before you can access it.
 - Check and edit the other files in the `config/` directory to customize your application as required.
-- Refer to the README in the `tests` directory for information specific to basic application tests.

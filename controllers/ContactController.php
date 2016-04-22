@@ -140,7 +140,7 @@ class ContactController extends Controller
     private function initValues(Contact $model)
     {
         /** @var Phone[] $values */
-        $phones = $model->getPhones()/*->indexBy('id')*/->all();
+        $phones = $model->getPhones()->all();
         $i = 0;
         foreach ($phones as $phone) {
             $i++;

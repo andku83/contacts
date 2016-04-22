@@ -34,7 +34,7 @@ class Phone extends \yii\db\ActiveRecord
             [['phone'], 'required', 'except' => self::SCENARIO_TABULAR],
             [['contact_id'], 'integer'],
             [['phone'], 'string', 'max' => 255],
-            [['phone'], 'match', 'pattern'=>'/^\(\d{3}\)[ ]\d{3}[\-]\d{2}[\-]\d{2}$/'],
+            [['phone'], 'match', 'pattern'=>'/^[+]\d{2}[ ]\(\d{3}\)[ ]\d{3}[\-]\d{2}[\-]\d{2}$/'],
             [['contact_id'], 'exist', 'skipOnError' => true, 'targetClass' => Contact::className(), 'targetAttribute' => ['contact_id' => 'id']],
         ];
     }

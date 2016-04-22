@@ -27,7 +27,7 @@ use yii\widgets\MaskedInput;
         echo $form->field($phone, '[' . $num++ . ']phone')->widget(
             MaskedInput::className(),[
                 'name' => 'Phone',
-                'mask' => '(999) 999-99-99'
+                'mask' => '+99 (999) 999-99-99'
             ]
         );
     }
