@@ -14,6 +14,7 @@ You can then install this project template using the following command:
 
 ~~~
 git clone https://github.com/andku83/contacts.git
+cd contacts
 composer install
 ~~~
 
